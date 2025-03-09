@@ -18,15 +18,15 @@
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+    <h2>Proposition: Limiting the accessibility of abortions reduces the number of abortions required by children.</h2>
 
 		<section>
       <h3>FOR the Proposition</h3>
 
       <figure>
-				<img src="first_iter.png" alt="" />
+				<img src="anti_abort.png" alt="" width="500px"/>
 				<figcaption>
-					BRIEF CAPTION HERE.
+					The effect of increasing the number of abortion providers on the number of pregnant minors residing in that state. The figure suggests that there is a strong, positive, linear correlation between the number of abortion providers in the state and the number of pregnant minors (and hence, as the number of abortion providers decreases, the number of pregnant minors may also decrease).
 				</figcaption>
 			</figure>
 
@@ -35,9 +35,10 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>-1.5: While the abortion provider count and abortion-seekers counts were quite similar for many states, larger areas like California and Texas skewed the data quite significantly (on the order of hundreds of providers and thousands of minors), which made it difficult to visualize and assess the rest of the data. As a result, I did remove them (along with states marked "nr" or "unavailable" in either of the categories). In the process, I also adjusted the axes to focus on the non-outlier data. Although intended with the purpose of making the data easier to visualize and process as an onlooker, I assigned this decision a high deceptive rating because it involved reducing a significant chunk fo the data present.</li>
+				<li>-0.5: I calculated the number of minors by adding up the younger than 15 years old and 15-17 years old categories in the 2020 data, but used the number of abortion providers by state data from 2020. This was because of a lack of consistent information across the years in the dataset. Although abortion providers did generally decrease between 2017 and 2020, I figured that the overall trend would still be visible even if the x and y axes were taken from different years. As a result, I assigned this decision a slightly deceptive marking.</li>
+				<li>1: I tried an appeal to pathos by underlaying baby footprints in the background of the chart to better emphasize the scale of abortions on a national level (to show what 12,800 pregnancies look like) and to draw associations between the dark red of the footprints and the scatter plot on the whole, and the common pro-life ideology that aborting a fetus is murder. To keep with this theme, I put "100 lost babies" in the legend--"babies" rather than "fetuses" or instead of focusing on the children carrying said fetuses. To de-emphasize the pregnant teenagers, I used the word "minor" rather than one with a younger connotation, like "child". </li>
+				<li>-0.5: I tried to increase ethos by drawing a trend line and calculating the R^2 coefficient to highlight the strength of the correlation. However, I calculated the R^2 value for the entire dataset (including outliers that were excluded from the graph), which is why I think this could be a bit misleading. However, I don't think this is entirely deceptive, since the visualization does not suggest using incomplete data anywhere / the common perception is the entire data set will be used when analyzing.</li>
 			</ul>
     </section>
 
@@ -45,9 +46,9 @@
       <h3>AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="final_final_iter.png" alt="" width="500px"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Limitations in abortion accessibility for children by state of residence. The figure suggests that pregnant adolescents who have to travel out of state to procure an abortion, form a higher proportion of the abortion-seeking population in their state of residence, compared to their counterparts with ready access to an abortion in their state. This implies that in addition to not reducing (rather, likely increasing) the number of teenage pregnancies, reducing accessibility to abortion clinics, doubly disadvantages large numbers of children who have to travel out of state to even have the choice of an abortion.
 				</figcaption>
 			</figure>
 
@@ -56,16 +57,45 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>1.5: The first major design decision I made with regards to this visualization (and to the proposition on the whole) was to focus on minors. For one, there wasn't enough data for children 15 years old and younger, which I thought would be the most compelling group to discuss in a pro-life context, since these children are under the age of consent, and hence have a higher chance of getting pregnant due to non-consensual sexual activity. However, since the data on this group of minors was understandably limited, I decided to broaden my scope to all minors (i.e. under the age of 18).</li>
+				<li>-0.5: The biggest data-oriented design decision I made with these visualizations was in determining which states did not provide children with sufficient access to abortions / which residents would need to travel out of state to be able to receive an abortion at all. I decided to do this by considering the number of abortion cases that occurred in a state and the number of cases that are attributed to residents of that state. If the second quantity is greater than the first, this implies that abortion-seekers have to travel out of the state to get an abortion, whereas if the first quantity is greater, there is sufficient access for a person to receive an abortion in-state. Thus, if a state was categorized as "In State", it was assumed that every individual in that state received their abortion in that state. While this is a large generalization, we can see that when counting the two columns separately (state of residence and state of occurrence), the total number of abortions is almost the same (perhaps some individuals traveled out of the country to receive an abortion). Hence, it is reasonable to think that this outline would produce a meaningful visualization (though of course, generalizations are never entirely accurate, which is why this decision is characterized as somewhat misleading). Further, it is interesting to note that the resident and occurrence columns are not completely consistent with the "% of residents obtaining abortions who traveled out of state for care, 2020" column. Perhaps that data was collected at a different time./li>
+				<li>-1.5: Next, in order to emphasize the difference between "In State" abortions and "Out of State" abortions, I selectively chose which outliers to keep and discard. Specifically, I removed all of the data points with 0% minor data in the Out of State box and whisker plot to shift the data upwards, and kept the Idaho data point (upper extremity), even connecting a whisker to it and elongating the plot in the y direction to accentuate the degree to which minors residing in states with limited access are being doubly-disadvantaged. Since all of these smaller decisions are somewhat misleading, I figured that cumulatively, they would be more deceptive, and hence assigned it a rating of -1.5.</li>
+				<li>-1.5: I think this decision was the most deceptive of the lot because it had little basis in the actual data set being used, and had more to do with the common political views of pro-life and pro-choice states and the pop culture associations of red and blue with the republican and democratic parties. Specifically, I decided to indicate the lack of accessibility of abortion in a resident state by using the color red, since many states that lean Republican in the election tend to vote pro-life and counter the practice of abortion. On the other hand, blue, Democratic states tend to condone building more abortion clinics and making the practice more accessible for the public. Even though each state was classified separately, from the collective, it is evident that the Out of State category leans "red" and the In State category leans "blue." Of course, since this is an extrapolation from the data set and not an actual finding from it, the red and blue states do not always line up with their political leanings in real life, but I thought including this might make the graph more visually appealing and a bit more persuasive with an appeal to the viewer's political leanings.</li>
+				<li>1: Finally, in a similar fashion to the pro-proposition figure above, I used iconography in the background of the plot to emphasize the scale of the situation. Instead of using baby feet, I used a silhouette of a person (presumably a child) holding a baby to underscore the consequences of not having an abortion, particularly in the context of teenager parents, who are children themselves. Further, since the y-axis in this plot is a percentage (i.e. the percentage of all abortions that are performed on a minor), I figured it would be more compelling to have a representation of scale. In addition, similar to the previous figure, I was particular about my word choice surrounding the iconography (and in the visualization on the whole). The minors, unlike the previous visualization, were always referred to as "children" and were the emphasis of the visualization, as the mothers are over their prospective baby in a pro-life argument. These decisions were made with the goal of persuasion, but did not involve transforming data in any way, so I rated them a 1 for earnestness.</li>
 			</ul>
     </section>
 
     <section>
       <h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+      <p>This assignment was the hardest one for me yet for a few reasons. First, as someone with personal political views on the subject, 
+		it was relatively simple for me to think of an appropriate argument for one side of the proposition, but extremely hard for me to 
+		think of the other side. Perhaps this was at least partially due to ignorance of the other side (which I learned more about through 
+		this assignment), but I think a good chunk of this was because of the lack of comprehensive and complete data in the abortion dataset. 
+		For instance, the data collected in 2017 provides further classification based on age ranges, but does not differentiate between state 
+		residency and the state where the abortion occurred, which 2020 does. Because I required several types of data to perform any meaningful 
+		analysis on both sides of the abortion argument, I was left with no choice but to mix and match the data as I needed, which inherently 
+		made my visualizations more misleading, since the data is not always consistent between years. Further, some of the expected trends (e.g.
+		state funding versus abortion count) did not appear as strongly in the data as I expected, so I either had to choose a different idea or
+		cherry-pick the data I wanted to work with. (In the case of the example, I did both--switching from state funding to abortion clinics and
+		removing certain outliers from the data, which certainly changed the strength of the underlying correlation).</p>
+		<p>Further, if you notice the ratings I gave each design decision above, I didn't assign a single decision a purely deceptive or purely
+		earnest mark. I would have given the decision to analyze data involving minors a 2 because the data was used precisely as is without any 
+		manipulation, however because of the incompleteness of the data surrounding minors (and the more persuasive numbers offered by the)
+		composite abortion accessibility data, I claimed that the legend in the pro-abortion data referred to purely children, but the data 
+		was extrapolated from the "15-44" age group category. However, even without the legend decision, it can be argued that I chose to work
+		with minors because the prospect of children getting pregnant is a bleak one, and has the potential to sway an audience with pathos. 
+		Would such a decision be considered deceptive, or merely persuasive? At the moment, I think that since no data 
+		was altered and the decision surrounded the topic itself rather than easily disfigured details, this decision could be considered
+		entirely earnest. On the other hand, all of my other decisions dealt with smaller considerations--do we include particular data points?
+		Do we use consistent data? What iconography are we using? Does the color choice have anything to do with the data itself or was it
+		extrapolated for persuasion purposes?--and hence, were inherently made to make the argument as persuasive as possible, even at the
+		expense of complete authenticity. On the other hand because no decisions involved explicitly lying, merely altering existing data or
+		manipulating existing perceptions of the topic, no decision got a purely deceptive mark. Still, the boundary between "acceptable" and 
+		"misleading" is exceedingly thin and a matter of perspective and context. "Ethical" is slightly easier to define--well within the bounds
+		of "acceptable", sitting as close to the existing and calculated data as possible (with minimal external extrapolation)--however it is 
+		equally difficult to implement in practice.
+		</p>
     </section>
 	</main>
 </body>
